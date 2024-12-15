@@ -1,7 +1,11 @@
 extends Node
 
-var currentFuel = 100
-var currentFreeze = 100
+
+@export var generatorFuel = 100
+@export var playerFreeze = 100
+@export var playerFuel = 100
+@export var monsterFreeze = 100
+
 
 
 

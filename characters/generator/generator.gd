@@ -1,10 +1,9 @@
 extends Node2D
 
-signal fuel_pickup
-@export var fuelValue = 100
+@export var fuelInput = 20
+
 var area
 var player
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,21 +11,28 @@ func _ready():
 	area = get_node("Area2D")
 	if player == null:
 		print("you dumbass check " + str(self))
-	player.fuel_interaction.connect(_on_player_fuel_interaction)
+	player.generator_interaction.connect(_on_player_generator_interaction)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-	
-	
 
-func _on_player_fuel_interaction():
+func _on_player_generator_interaction():
 	for body in area.get_overlapping_areas():
 		if body.is_in_group("players group"):  
-			GlobalVariables.playerFuel += fuelValue
-			print("current fuel: " + str(GlobalVariables.playerFuel))
+			if GlobalVariables.playerFuel > 0:
+				GlobalVariables.playerFuel -= fuelInput
+				GlobalVariables.generatorFuel += fuelInput
+				if OS.is_debug_build():
+					print("current player fuel: " + str(GlobalVariables.playerFuel))
+			else:
+				if OS.is_debug_build():
+					print("no more fuel to add")
 			#for child in self.get_children():
 				#child.queue_free()
-			queue_free()
-				
-				
+	
+	
+	
+	
+	
