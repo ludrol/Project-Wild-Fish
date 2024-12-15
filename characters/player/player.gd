@@ -2,7 +2,8 @@ extends Node2D
 @export var speed = 400
 var area
 var fuel
-
+signal generator_interaction
+signal fuel_interaction
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -33,12 +34,13 @@ func _process(delta):
 		
 #	check if generator is in range to be interacted with
 	if Input.is_action_just_pressed("interact"):
-	
 		for body in area.get_overlapping_areas():
-			print(body)
+			#print(body)
 			if body.is_in_group("generators group"):  
 				print("generator interaction!")
 				emit_signal("generator_interaction")
-		
+			if body.is_in_group("fuels group"):
+				print("fuel interaction")
+				emit_signal("fuel_interaction")
 #func 		
 		

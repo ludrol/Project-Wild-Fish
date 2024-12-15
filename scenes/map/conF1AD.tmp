@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://btg4agoxl5b68"]
+
+[ext_resource type="Script" path="res://scenes/map/contaiment_base.gd" id="1_ss1x1"]
+[ext_resource type="Texture2D" uid="uid://g8p1nncgihcu" path="res://icon.svg" id="2_v10re"]
+[ext_resource type="PackedScene" uid="uid://bioa7k7y0n25m" path="res://characters/generator/generator.tscn" id="3_jfpph"]
+[ext_resource type="PackedScene" uid="uid://bccdi2rme1wya" path="res://characters/player/player.tscn" id="4_ig63l"]
+[ext_resource type="PackedScene" uid="uid://cyef8mdyfyy51" path="res://characters/fuel/Fuel.tscn" id="5_t1j1c"]
+
+[node name="ContaimentBase" type="Node2D"]
+script = ExtResource("1_ss1x1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(159, 47)
+texture = ExtResource("2_v10re")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(368, 25)
+texture = ExtResource("2_v10re")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(172, 213)
+texture = ExtResource("2_v10re")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(360, 190)
+texture = ExtResource("2_v10re")
+
+[node name="Generator" parent="." instance=ExtResource("3_jfpph")]
+position = Vector2(260, 134)
+
+[node name="Player" parent="." instance=ExtResource("4_ig63l")]
+position = Vector2(91, 129)
+
+[node name="Fuel" parent="." instance=ExtResource("5_t1j1c")]
+position = Vector2(-133, 131)
+fuelValue = null
+
+[node name="Fuel2" parent="." instance=ExtResource("5_t1j1c")]
+position = Vector2(-133, 53)
+fuelValue = null

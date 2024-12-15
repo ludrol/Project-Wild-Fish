@@ -14,7 +14,7 @@ modulate = Color(0.95, 0, 1, 1)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_unobj")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["fuels group"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_5667q")
