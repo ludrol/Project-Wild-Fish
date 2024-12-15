@@ -12,7 +12,7 @@ func _ready():
 	area = get_node("Area2D")
 	if player == null:
 		print("you dumbass check " + str(self))
-	player.fuel_interaction.connect(_on_player_fuel_interaction)
+	player.fuel_interaction.connect(_on_player_fuel_interaction,4)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
