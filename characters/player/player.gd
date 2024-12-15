@@ -33,12 +33,12 @@ func _process(delta):
 		
 #	check if generator is in range to be interacted with
 	if Input.is_action_just_pressed("interact"):
-	
 		for body in area.get_overlapping_areas():
 			print(body)
 			if body.is_in_group("generators group"):  
 				print("generator interaction!")
 				emit_signal("generator_interaction")
-		
+			if body.is_in_group("fuels goup"):
+				print("fuel interaction")
 #func 		
 		

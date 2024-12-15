@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Project Wild Fish"
-run/main_scene="res://scenes/map/ContaimentBase.tscn"
+run/main_scene="res://scenes/map/contaiment_base.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,7 @@ version_control/autoload_on_startup=true
 
 "generators group"=""
 "players group"=""
+"fuels group"=""
 
 [input]
 
