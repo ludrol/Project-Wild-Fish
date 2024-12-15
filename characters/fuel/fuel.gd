@@ -12,7 +12,7 @@ func _ready():
 	area = get_node("Area2D")
 	if player == null:
 		print("you dumbass check " + str(self))
-	player.fuel_interaction.connect(_on_player_fuel_interaction,4)
+	player.fuel_interaction.connect(_on_player_fuel_interaction)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -21,12 +21,13 @@ func _process(delta):
 	
 
 func _on_player_fuel_interaction():
-	for body in area.get_overlapping_areas():
-		if body.is_in_group("players group"):  
-			GlobalVariables.playerFuel += fuelValue
-			print("current fuel: " + str(GlobalVariables.playerFuel))
-			#for child in self.get_children():
-				#child.queue_free()
-			queue_free()
-				
+	if not is_queued_for_deletion():
+		for body in area.get_overlapping_areas():
+			if body.is_in_group("players group"):  
+				GlobalVariables.playerFuel += fuelValue
+				print("current fuel: " + str(GlobalVariables.playerFuel))
+				#for child in self.get_children():
+					#child.queue_free()
+				queue_free()
+					
 				
