@@ -1,103 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://btg4agoxl5b68"]
+[gd_scene load_steps=7 format=3 uid="uid://btg4agoxl5b68"]
 
 [ext_resource type="Script" path="res://scenes/map/contaiment_base.gd" id="1_ss1x1"]
 [ext_resource type="Texture2D" uid="uid://g8p1nncgihcu" path="res://icon.svg" id="2_v10re"]
 [ext_resource type="PackedScene" uid="uid://bioa7k7y0n25m" path="res://characters/generator/generator.tscn" id="3_jfpph"]
 [ext_resource type="PackedScene" uid="uid://bccdi2rme1wya" path="res://characters/player/player.tscn" id="4_ig63l"]
 [ext_resource type="PackedScene" uid="uid://cyef8mdyfyy51" path="res://characters/fuel/Fuel.tscn" id="5_t1j1c"]
-[ext_resource type="Texture2D" uid="uid://6b4v87k7qf1b" path="res://Images/Tileset/Tileset.png" id="6_6g0bb"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hgxyb"]
-texture = ExtResource("6_6g0bb")
-4:0/0 = 0
-5:0/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-7:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-10:2/0 = 0
-13:2/0 = 0
-10:3/0 = 0
-12:3/0 = 0
-13:3/0 = 0
-14:3/0 = 0
-15:3/0 = 0
-12:4/0 = 0
-13:4/0 = 0
-14:4/0 = 0
-15:4/0 = 0
-10:5/0 = 0
-13:5/0 = 0
-14:5/0 = 0
-13:6/0 = 0
-14:6/0 = 0
-10:7/0 = 0
-10:8/0 = 0
-0:10/0 = 0
-1:10/0 = 0
-3:10/0 = 0
-0:11/0 = 0
-3:11/0 = 0
-5:11/0 = 0
-6:11/0 = 0
-1:12/0 = 0
-2:12/0 = 0
-7:12/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-3:13/0 = 0
-5:13/0 = 0
-6:13/0 = 0
-7:13/0 = 0
-0:15/0 = 0
-1:15/0 = 0
-2:15/0 = 0
-3:15/0 = 0
-4:15/0 = 0
-5:15/0 = 0
-6:15/0 = 0
-7:15/0 = 0
-8:15/0 = 0
-9:15/0 = 0
-6:2/size_in_atlas = Vector2i(2, 2)
-6:2/0 = 0
-6:8/size_in_atlas = Vector2i(2, 2)
-6:8/0 = 0
-4:8/size_in_atlas = Vector2i(2, 2)
-4:8/0 = 0
-2:8/size_in_atlas = Vector2i(2, 2)
-2:8/0 = 0
-0:8/size_in_atlas = Vector2i(2, 2)
-0:8/0 = 0
-4:2/size_in_atlas = Vector2i(2, 2)
-4:2/0 = 0
-8:2/size_in_atlas = Vector2i(1, 2)
-8:2/0 = 0
-8:4/size_in_atlas = Vector2i(1, 2)
-8:4/0 = 0
-8:6/size_in_atlas = Vector2i(1, 2)
-8:6/0 = 0
-6:6/size_in_atlas = Vector2i(2, 2)
-6:6/0 = 0
-6:4/size_in_atlas = Vector2i(2, 2)
-6:4/0 = 0
-4:4/size_in_atlas = Vector2i(2, 2)
-4:4/0 = 0
-4:6/size_in_atlas = Vector2i(2, 2)
-4:6/0 = 0
-2:6/size_in_atlas = Vector2i(2, 2)
-2:6/0 = 0
-2:4/size_in_atlas = Vector2i(2, 2)
-2:4/0 = 0
-2:2/size_in_atlas = Vector2i(2, 2)
-2:2/next_alternative_id = 2
-2:2/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_0x52i"]
-sources/4 = SubResource("TileSetAtlasSource_hgxyb")
 
 [node name="ContaimentBase" type="Node2D"]
 script = ExtResource("1_ss1x1")
