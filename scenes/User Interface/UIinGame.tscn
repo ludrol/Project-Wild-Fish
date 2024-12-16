@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dslra4mwd0uu1"]
 
-[ext_resource type="Texture2D" uid="uid://b8tmquh8oq376" path="res://Images/EmptyProgressSmall.png" id="1_t84l7"]
-[ext_resource type="Texture2D" uid="uid://5vw1emvtskmy" path="res://Images/FillerProgressSmall.png" id="2_6hffo"]
+[ext_resource type="Texture2D" uid="uid://b8tmquh8oq376" path="res://Images/Progress/EmptyProgressSmall.png" id="1_t84l7"]
+[ext_resource type="Texture2D" uid="uid://5vw1emvtskmy" path="res://Images/Progress/FillerProgressSmall.png" id="2_6hffo"]
 
 [node name="UIinGame" type="Control"]
 layout_mode = 3

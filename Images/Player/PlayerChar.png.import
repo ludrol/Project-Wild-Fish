@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8tmquh8oq376"
-path="res://.godot/imported/EmptyProgressSmall.png-4046d64c69179d61d22152d3468abd0a.ctex"
+uid="uid://4ncp4rr6gbri"
+path="res://.godot/imported/PlayerChar.png-0cdbff772a7174161cbc9197760bc9d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/EmptyProgressSmall.png"
-dest_files=["res://.godot/imported/EmptyProgressSmall.png-4046d64c69179d61d22152d3468abd0a.ctex"]
+source_file="res://Images/Player/PlayerChar.png"
+dest_files=["res://.godot/imported/PlayerChar.png-0cdbff772a7174161cbc9197760bc9d4.ctex"]
 
 [params]
 
