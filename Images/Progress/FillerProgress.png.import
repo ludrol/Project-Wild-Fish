@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6b4v87k7qf1b"
-path="res://.godot/imported/Tileset.png-a09f06e542c63095472a140dcbd997f8.ctex"
+uid="uid://dhmwhtxlhcpjf"
+path="res://.godot/imported/FillerProgress.png-7672c7fffd2eb85d9cd84dfd578d0640.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-a09f06e542c63095472a140dcbd997f8.ctex"]
+source_file="res://Images/Progress/FillerProgress.png"
+dest_files=["res://.godot/imported/FillerProgress.png-7672c7fffd2eb85d9cd84dfd578d0640.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eg4kesme60ld"
-path="res://.godot/imported/FillerProgressSmallx2.png-7245fe24ab2531d1a68c1fb39e682b5b.ctex"
+uid="uid://cubehvrftm7xr"
+path="res://.godot/imported/FillerOrng.png-bd1bc3105d53335fffe814520298461c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/FillerProgressSmallx2.png"
-dest_files=["res://.godot/imported/FillerProgressSmallx2.png-7245fe24ab2531d1a68c1fb39e682b5b.ctex"]
+source_file="res://Images/Progress/FillerOrng.png"
+dest_files=["res://.godot/imported/FillerOrng.png-bd1bc3105d53335fffe814520298461c.ctex"]
 
 [params]
 

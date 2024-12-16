@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8tmquh8oq376"
-path="res://.godot/imported/EmptyProgressSmall.png-4046d64c69179d61d22152d3468abd0a.ctex"
+uid="uid://6b4v87k7qf1b"
+path="res://.godot/imported/Tileset.png-ad62d1474de9a664a12eb9044d681c3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/EmptyProgressSmall.png"
-dest_files=["res://.godot/imported/EmptyProgressSmall.png-4046d64c69179d61d22152d3468abd0a.ctex"]
+source_file="res://Images/Tileset/Tileset.png"
+dest_files=["res://.godot/imported/Tileset.png-ad62d1474de9a664a12eb9044d681c3f.ctex"]
 
 [params]
 
