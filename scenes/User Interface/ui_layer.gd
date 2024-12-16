@@ -11,10 +11,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
-	if fuelBar.value > 99:
-		fuelBar.value = 0
-	else:
-		fuelBar.value += 1
+	
 	
 	
 	
