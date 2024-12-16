@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://g8p1nncgihcu" path="res://icon.svg" id="1_unobj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5667q"]
-size = Vector2(64, 66)
+size = Vector2(32, 32)
 
 [node name="Fuel" type="Node2D"]
 script = ExtResource("1_au8bk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.95, 0, 1, 1)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_unobj")
 
 [node name="Area2D" type="Area2D" parent="." groups=["fuels group"]]
