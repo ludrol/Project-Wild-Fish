@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://g8p1nncgihcu" path="res://icon.svg" id="2_v10re"]
 [ext_resource type="PackedScene" uid="uid://bioa7k7y0n25m" path="res://characters/generator/generator.tscn" id="3_jfpph"]
 [ext_resource type="PackedScene" uid="uid://bccdi2rme1wya" path="res://characters/player/player.tscn" id="4_ig63l"]
-[ext_resource type="PackedScene" uid="uid://cyef8mdyfyy51" path="res://characters/fuel/Fuel.tscn" id="5_t1j1c"]
+[ext_resource type="PackedScene" uid="uid://cyef8mdyfyy51" path="res://characters/fuel/fuel.tscn" id="5_t1j1c"]
 
 [node name="ContaimentBase" type="Node2D"]
 script = ExtResource("1_ss1x1")
