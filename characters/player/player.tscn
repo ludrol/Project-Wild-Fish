@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://g8p1nncgihcu" path="res://icon.svg" id="1_7w3ve"]
 [ext_resource type="Script" path="res://characters/player/player.gd" id="1_77nya"]
-[ext_resource type="PackedScene" uid="uid://dslra4mwd0uu1" path="res://scenes/User Interface/UIinGame.tscn" id="3_lliqr"]
+[ext_resource type="PackedScene" uid="uid://7ghmc2f8senk" path="res://scenes/User Interface/UILayer.tscn" id="3_qsh14"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4q81g"]
 radius = 64.0
@@ -19,12 +19,7 @@ texture = ExtResource("1_7w3ve")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="UIinGame" parent="Camera2D" instance=ExtResource("3_lliqr")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
+[node name="CanvasLayer" parent="Camera2D" instance=ExtResource("3_qsh14")]
 
 [node name="Area2D" type="Area2D" parent="." groups=["players group"]]
 
