@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://btg4agoxl5b68"]
+[gd_scene load_steps=9 format=4 uid="uid://btg4agoxl5b68"]
 
 [ext_resource type="Script" path="res://scenes/map/contaiment_base.gd" id="1_ss1x1"]
 [ext_resource type="TileSet" uid="uid://djoinxyr1on1r" path="res://Images/Tileset/base.tres" id="2_e4t5x"]
@@ -7,6 +7,7 @@
 [ext_resource type="TileSet" uid="uid://chflnyw8kupv3" path="res://Images/Tileset/walls.tres" id="4_078nh"]
 [ext_resource type="PackedScene" uid="uid://bccdi2rme1wya" path="res://characters/player/player.tscn" id="4_ig63l"]
 [ext_resource type="PackedScene" uid="uid://cyef8mdyfyy51" path="res://characters/fuel/fuel.tscn" id="5_t1j1c"]
+[ext_resource type="Texture2D" uid="uid://157nvwi876h1" path="res://Images/Monster/Snake.png" id="8_i6g3t"]
 
 [node name="ContaimentBase" type="Node2D"]
 script = ExtResource("1_ss1x1")
@@ -42,3 +43,7 @@ position = Vector2(-111, 0)
 
 [node name="Fuel5" parent="." instance=ExtResource("5_t1j1c")]
 position = Vector2(-202, 216)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(402, 112)
+texture = ExtResource("8_i6g3t")

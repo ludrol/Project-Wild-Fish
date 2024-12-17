@@ -1,20 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://cyef8mdyfyy51"]
 
 [ext_resource type="Script" path="res://characters/fuel/fuel.gd" id="1_au8bk"]
-[ext_resource type="Texture2D" uid="uid://g8p1nncgihcu" path="res://icon.svg" id="1_unobj"]
+[ext_resource type="Texture2D" uid="uid://cu5ufl5atopwx" path="res://Images/Fuel/Fuel.png" id="2_dibbr"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5667q"]
-size = Vector2(32, 32)
+[sub_resource type="CircleShape2D" id="CircleShape2D_h88pq"]
+radius = 16.0
 
 [node name="Fuel" type="Node2D"]
 script = ExtResource("1_au8bk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.95, 0, 1, 1)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_unobj")
+texture = ExtResource("2_dibbr")
 
 [node name="Area2D" type="Area2D" parent="." groups=["fuels group"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_5667q")
+shape = SubResource("CircleShape2D_h88pq")
