@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var fuelInput = 20
-@export var fuelConsumption = 20.0
+@export var fuelInput = 150
+@export var fuelConsumption = 10.0
 
 @onready var GeneratorBar = %GeneratorBar
 var area
