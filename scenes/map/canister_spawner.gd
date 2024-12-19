@@ -1,15 +1,15 @@
 extends Node2D
 
 
-@onready var spawnArea = $Area2D/CollisionShape2D.shape.extents
+@onready var spawnArea = $Area2D/CollisionShape2D.shape.size
 @onready var origin = $Area2D/CollisionShape2D.global_position -  spawnArea
 
 var fuel = preload("res://characters/fuel/fuel.tscn")
 
 
 func gen_random_pos():
-	var x = randi_range(origin.x, spawnArea.x)
-	var y = randi_range(origin.y, spawnArea.y)
+	var x = randi_range(-spawnArea.x, spawnArea.x)/2
+	var y = randi_range(-spawnArea.y, spawnArea.y)/2
 	
 	return Vector2(x, y)
 

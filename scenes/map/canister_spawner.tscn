@@ -9,11 +9,10 @@ script = ExtResource("1_g7atd")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(30.5, 6)
 shape = ExtResource("2_lnlmy")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 0.01
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -9,14 +9,14 @@
 [ext_resource type="PackedScene" uid="uid://dfegm0bx0dayl" path="res://scenes/map/canister_spawner.tscn" id="8_g88r3"]
 [ext_resource type="Texture2D" uid="uid://157nvwi876h1" path="res://Images/Monster/Snake.png" id="8_i6g3t"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_grrac"]
-size = Vector2(224, 221)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rs7bv"]
+size = Vector2(236.5, 232)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3d8y"]
-size = Vector2(389, 138)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mrsu0"]
+size = Vector2(387, 132)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iljn5"]
-size = Vector2(314, 227)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfa6g"]
+size = Vector2(326.5, 225.5)
 
 [node name="ContaimentBase" type="Node2D"]
 script = ExtResource("1_ss1x1")
@@ -43,27 +43,25 @@ position = Vector2(318, 179)
 position = Vector2(631, 137)
 texture = ExtResource("8_i6g3t")
 
-[node name="CanisterSpawner" parent="." instance=ExtResource("8_g88r3")]
-position = Vector2(-438, 261)
-
-[node name="CollisionShape2D" parent="CanisterSpawner/Area2D" index="0"]
-position = Vector2(5, 8.5)
-shape = SubResource("RectangleShape2D_grrac")
-
-[node name="CanisterSpawner2" parent="." instance=ExtResource("8_g88r3")]
-position = Vector2(290, 750)
-
-[node name="CollisionShape2D" parent="CanisterSpawner2/Area2D" index="0"]
-position = Vector2(30.5, 14)
-shape = SubResource("RectangleShape2D_h3d8y")
-
 [node name="CanisterSpawner3" parent="." instance=ExtResource("8_g88r3")]
-position = Vector2(290, 750)
+position = Vector2(-433, 269)
 
 [node name="CollisionShape2D" parent="CanisterSpawner3/Area2D" index="0"]
-position = Vector2(-33, -1024.5)
-shape = SubResource("RectangleShape2D_iljn5")
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_rs7bv")
 
-[editable path="CanisterSpawner"]
-[editable path="CanisterSpawner2"]
+[node name="CanisterSpawner4" parent="." instance=ExtResource("8_g88r3")]
+position = Vector2(322, 770)
+
+[node name="CollisionShape2D" parent="CanisterSpawner4/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_mrsu0")
+
+[node name="CanisterSpawner5" parent="." instance=ExtResource("8_g88r3")]
+position = Vector2(253, -271)
+
+[node name="CollisionShape2D" parent="CanisterSpawner5/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_sfa6g")
+
 [editable path="CanisterSpawner3"]
+[editable path="CanisterSpawner4"]
+[editable path="CanisterSpawner5"]
