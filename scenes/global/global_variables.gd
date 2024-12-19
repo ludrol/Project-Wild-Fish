@@ -4,7 +4,7 @@ extends Node
 @export var playerFuel = 100
 @export var playerFreeze = 1000
 @export var monsterFreeze = 100
-@export var generatorFuel = 100
+@export var generatorFuel = 300
 
 @export_category("max values")
 @export var maxPlayerFuel = 500

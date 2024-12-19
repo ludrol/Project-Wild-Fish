@@ -24,7 +24,10 @@ func _on_player_fuel_interaction():
 	if not is_queued_for_deletion():
 		for body in area.get_overlapping_areas():
 			if body.is_in_group("players group"):  
-				GlobalVariables.playerFuel += fuelValue
+				if GlobalVariables.playerFuel + fuelValue < GlobalVariables.maxPlayerFuel:
+					GlobalVariables.playerFuel += fuelValue
+				else:
+					GlobalVariables.playerFuel = GlobalVariables.maxPlayerFuel
 				print("current fuel: " + str(GlobalVariables.playerFuel))
 				#for child in self.get_children():
 					#child.queue_free()

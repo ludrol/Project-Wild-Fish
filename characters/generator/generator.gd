@@ -1,7 +1,9 @@
 extends Node2D
 
 @export var fuelInput = 20
+@export var fuelConsumption = 20.0
 
+@onready var GeneratorBar = %GeneratorBar
 var area
 var player
 
@@ -16,7 +18,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	GlobalVariables.generatorFuel -= fuelConsumption * delta
+	GeneratorBar.value = float(GlobalVariables.generatorFuel) / GlobalVariables.maxGeneratorFuel * 100
+	
+	
+	
 
 func _on_player_generator_interaction():
 	for body in area.get_overlapping_areas():
