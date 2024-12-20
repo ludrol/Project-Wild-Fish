@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cyef8mdyfyy51"]
 
 [ext_resource type="Script" path="res://characters/fuel/fuel.gd" id="1_au8bk"]
-[ext_resource type="Texture2D" uid="uid://cu5ufl5atopwx" path="res://Images/Fuel/Fuel.png" id="2_dibbr"]
+[ext_resource type="Texture2D" uid="uid://d34wcverbyirn" path="res://Images/Fuel/Barrel.png" id="2_r0aqf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h88pq"]
 radius = 16.0
@@ -10,7 +10,7 @@ radius = 16.0
 script = ExtResource("1_au8bk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_dibbr")
+texture = ExtResource("2_r0aqf")
 
 [node name="Area2D" type="Area2D" parent="." groups=["fuels group"]]
 
