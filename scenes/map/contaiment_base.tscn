@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://btg4agoxl5b68"]
+[gd_scene load_steps=12 format=4 uid="uid://btg4agoxl5b68"]
 
 [ext_resource type="Script" path="res://scenes/map/contaiment_base.gd" id="1_ss1x1"]
 [ext_resource type="TileSet" uid="uid://djoinxyr1on1r" path="res://Images/Tileset/base.tres" id="2_e4t5x"]
 [ext_resource type="TileSet" uid="uid://tu4yqbe7b5r2" path="res://Images/Tileset/props.tres" id="3_136if"]
 [ext_resource type="PackedScene" uid="uid://bioa7k7y0n25m" path="res://characters/generator/generator.tscn" id="3_jfpph"]
 [ext_resource type="PackedScene" uid="uid://bccdi2rme1wya" path="res://characters/player/player.tscn" id="4_ig63l"]
+[ext_resource type="Texture2D" uid="uid://diwgoa53f6k8w" path="res://Images/Gen/Gen.png" id="5_m2xg0"]
 [ext_resource type="PackedScene" uid="uid://dfegm0bx0dayl" path="res://scenes/map/canister_spawner.tscn" id="8_g88r3"]
 [ext_resource type="Texture2D" uid="uid://157nvwi876h1" path="res://Images/Monster/Snake.png" id="8_i6g3t"]
 
@@ -31,6 +32,9 @@ tile_set = ExtResource("3_136if")
 
 [node name="Generator" parent="." instance=ExtResource("3_jfpph")]
 position = Vector2(509, 147)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Generator"]
+texture = ExtResource("5_m2xg0")
 
 [node name="Player" parent="." instance=ExtResource("4_ig63l")]
 position = Vector2(318, 179)
