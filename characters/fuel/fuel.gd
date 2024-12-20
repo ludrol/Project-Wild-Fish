@@ -8,10 +8,11 @@ var player
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	player = get_node_or_null("../Player") #this is really hacky solution. it will break. 
+	player = get_node("../../Player") #this is really hacky solution. it will break. 
+	#print(player)
 	area = get_node("Area2D")
-	if player == null:
-		print("you dumbass check " + str(self))
+	#if player == null:
+		#print("you dumbass check " + str(self))
 	player.fuel_interaction.connect(_on_player_fuel_interaction)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

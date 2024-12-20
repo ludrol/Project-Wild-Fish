@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfegm0bx0dayl"]
+
+[ext_resource type="Script" path="res://scenes/map/canister_spawner.gd" id="1_g7atd"]
+[ext_resource type="Shape2D" uid="uid://cslhb2vwy4h5q" path="res://scenes/map/Spawner_Area.tres" id="2_lnlmy"]
+
+[node name="CanisterSpawner" type="Node2D"]
+script = ExtResource("1_g7atd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = ExtResource("2_lnlmy")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
