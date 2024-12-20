@@ -27,17 +27,35 @@ func _process(delta):
 func _on_player_generator_interaction():
 	for body in area.get_overlapping_areas():
 		if body.is_in_group("players group"):  
-			if GlobalVariables.playerFuel > 0:
-				GlobalVariables.playerFuel -= fuelInput
-				if GlobalVariables.generatorFuel + fuelInput < GlobalVariables.maxGeneratorFuel:
-					GlobalVariables.generatorFuel += fuelInput
+			
+			#check if player has fuel
+			if GlobalVariables.playerFuel > 0: 
+				
+				#check if player has enough fuel
+				var input = fuelInput
+				if GlobalVariables.playerFuel - input < 0: 
+					input = GlobalVariables.playerFuel
+					#GlobalVariables.playerFuel = 0
+					
+				#check if generator has room for fuel
+				if GlobalVariables.generatorFuel + input < GlobalVariables.maxGeneratorFuel: 
+					GlobalVariables.generatorFuel += input
 				else:
+					input = GlobalVariables.maxGeneratorFuel - GlobalVariables.generatorFuel
 					GlobalVariables.generatorFuel = GlobalVariables.maxGeneratorFuel
+					
+					
+				#take fuel from player
+				GlobalVariables.playerFuel -= input
 				if OS.is_debug_build():
 					print("current player fuel: " + str(GlobalVariables.playerFuel))
+			
+			#no fuel was added
 			else:
+				GlobalVariables.playerFuel = 0
 				if OS.is_debug_build():
 					print("no more fuel to add")
+				
 			#for child in self.get_children():
 				#child.queue_free()
 	
