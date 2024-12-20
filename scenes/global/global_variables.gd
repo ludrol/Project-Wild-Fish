@@ -5,12 +5,14 @@ extends Node
 @export var playerFreeze = 1000
 @export var monsterFreeze = 100
 @export var generatorFuel = 300
+var fuelBarrels = 0
 
 @export_category("max values")
 @export var maxPlayerFuel = 500
 @export var maxPlayerFreeze = 1000
 @export var maxMonsterFreeze = 1000
 @export var maxGeneratorFuel = 1000
+@export var maxFuelBarrels = 20
 
 
 

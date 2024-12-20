@@ -32,6 +32,7 @@ func _on_player_fuel_interaction():
 				print("current fuel: " + str(GlobalVariables.playerFuel))
 				#for child in self.get_children():
 					#child.queue_free()
+				GlobalVariables.fuelBarrels -= 1
 				queue_free()
 					
 				

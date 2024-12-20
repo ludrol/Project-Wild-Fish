@@ -25,6 +25,10 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	var fuelSpawn = fuel.instantiate()
-	fuelSpawn.position = gen_random_pos()
-	add_child(fuelSpawn)
+	if GlobalVariables.fuelBarrels < GlobalVariables.maxFuelBarrels:
+		var fuelSpawn = fuel.instantiate()
+		fuelSpawn.position = gen_random_pos()
+		add_child(fuelSpawn)
+		GlobalVariables.fuelBarrels += 1
+		if OS.is_debug_build():
+			print("Current fuel barrels: " +  str(GlobalVariables.fuelBarrels))
