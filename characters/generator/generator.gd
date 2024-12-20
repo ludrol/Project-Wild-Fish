@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var fuelInput = 150
-@export var fuelConsumption = 10.0
+@export var fuelConsumption = 30.0
 
 @onready var GeneratorBar = %GeneratorBar
 var area
@@ -29,7 +29,10 @@ func _on_player_generator_interaction():
 		if body.is_in_group("players group"):  
 			if GlobalVariables.playerFuel > 0:
 				GlobalVariables.playerFuel -= fuelInput
-				GlobalVariables.generatorFuel += fuelInput
+				if GlobalVariables.generatorFuel + fuelInput < GlobalVariables.maxGeneratorFuel:
+					GlobalVariables.generatorFuel += fuelInput
+				else:
+					GlobalVariables.generatorFuel = GlobalVariables.maxGeneratorFuel
 				if OS.is_debug_build():
 					print("current player fuel: " + str(GlobalVariables.playerFuel))
 			else:
