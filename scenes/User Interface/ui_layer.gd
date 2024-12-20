@@ -16,3 +16,6 @@ func _process(delta):
 	#print(float(GlobalVariables.playerFuel) / GlobalVariables.maxPlayerFuel)
 	
 	
+
+
+	

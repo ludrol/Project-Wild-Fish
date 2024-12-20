@@ -1,10 +1,10 @@
 extends Node
 
 @export_category("starting values")
-@export var playerFuel = 100
-@export var playerFreeze = 1000
-@export var monsterFreeze = 100
-@export var generatorFuel = 300
+@export var playerFuel = 100.0
+@export var playerFreeze = 1000.0
+@export var monsterFreeze = 100.0
+@export var generatorFuel = 300.0
 var fuelBarrels = 0
 
 @export_category("max values")

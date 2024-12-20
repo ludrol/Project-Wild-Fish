@@ -18,9 +18,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	GlobalVariables.generatorFuel -= fuelConsumption * delta
-	GeneratorBar.value = float(GlobalVariables.generatorFuel) / GlobalVariables.maxGeneratorFuel * 100
-	
+	if GlobalVariables.generatorFuel > 0:
+		GlobalVariables.generatorFuel -= fuelConsumption * delta
+		GeneratorBar.value = float(GlobalVariables.generatorFuel) / GlobalVariables.maxGeneratorFuel * 100
+	else: 
+		GlobalVariables.generatorFuel = 0
 	
 	
 
