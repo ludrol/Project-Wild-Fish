@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://suts3k45fsja"
-path="res://.godot/imported/Gen.png-eaa8b3d8fa4820d9d0b75361defec519.ctex"
+uid="uid://d34wcverbyirn"
+path="res://.godot/imported/BarrelObsolete.png-b83b485cf5a25cc6c3745e34cf59943d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/Gen/Gen.png"
-dest_files=["res://.godot/imported/Gen.png-eaa8b3d8fa4820d9d0b75361defec519.ctex"]
+source_file="res://Images/Fuel/BarrelObsolete.png"
+dest_files=["res://.godot/imported/BarrelObsolete.png-b83b485cf5a25cc6c3745e34cf59943d.ctex"]
 
 [params]
 
