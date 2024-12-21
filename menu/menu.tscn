@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://54o5rc0iobti"]
+
+[ext_resource type="Texture2D" uid="uid://csbl2rybgyn32" path="res://Images/Menu/backgroud.png" id="1_rsp3m"]
+[ext_resource type="Texture2D" uid="uid://b7b62pgcu1vlp" path="res://Images/Menu/PWF_logo.png" id="2_iqq02"]
+
+[node name="Menu" type="Node"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_rsp3m")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_iqq02")
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Project Wild Fish"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Button2" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "settings"
+
+[node name="Button3" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "credits"
+
+[node name="Button4" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "quit"
