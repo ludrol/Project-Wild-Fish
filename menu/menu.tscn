@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://54o5rc0iobti"]
+[gd_scene load_steps=4 format=3 uid="uid://54o5rc0iobti"]
 
 [ext_resource type="Texture2D" uid="uid://csbl2rybgyn32" path="res://Images/Menu/backgroud.png" id="1_rsp3m"]
+[ext_resource type="Script" path="res://menu/menu.gd" id="1_vubth"]
 [ext_resource type="Texture2D" uid="uid://b7b62pgcu1vlp" path="res://Images/Menu/PWF_logo.png" id="2_iqq02"]
 
 [node name="Menu" type="Node"]
+script = ExtResource("1_vubth")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 40.0
@@ -50,3 +52,5 @@ text = "credits"
 [node name="Button4" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "quit"
+
+[connection signal="pressed" from="CanvasLayer/MarginContainer/CenterContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
